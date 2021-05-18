@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/login/login"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#87ceeb",
+    "backgroundColor": "#87ceeb"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#fff",
+    "backgroundColor": "#87ceeb",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,31 @@
+.home-page {
+  height: 100%;
+}
+.home-page .user-content .userInfo {
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  margin-top: 10rpx;
+}
+.home-page .user-content .userInfo text {
+  margin-left: 40rpx;
+}
+.home-page .loginFrom {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
