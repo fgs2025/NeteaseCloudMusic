@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/home/home",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/playlist/playlist"
   ],
   "subPackages": [],
   "window": {
@@ -25,5 +26,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

@@ -7947,9 +7947,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!***********************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/pages.json ***!
-  \***********************************************/
+/*!*************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/pages.json ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -7959,79 +7959,9 @@ module.exports = g;
 /* 5 */,
 /* 6 */,
 /* 7 */,
-/* 8 */
-/*!*************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/api/login.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.phoneLogin = phoneLogin;exports.loginStatus = loginStatus;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 9));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-function phoneLogin(data) {
-  //手机登陆
-  return (0, _request.default)({
-    url: '/login/cellphone',
-    method: 'POST',
-    data: data });
-
-}
-
-function loginStatus(data) {
-  //登陆状态
-  return (0, _request.default)({
-    url: '/login/status',
-    method: 'GET',
-    data: data });
-
-}
-
-/***/ }),
-/* 9 */
-/*!*****************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/utils/request.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function service(options) {
-  var server_url = 'https://netease-cloud-music-api-chi-henna.vercel.app'; //请求地址
-  return new Promise(function (resolved, rejected) {
-    // setTimeout(() => {
-    uni.request({
-
-
-
-
-      url: server_url + options.url,
-
-      method: options.method,
-      timeout: 5000,
-      header: {
-        'content-type': 'application/x-www-form-urlencoded' //自定义请求头信息
-      },
-      data: options.data,
-      success: function success(res) {
-        resolved(res.data);
-      },
-      fail: function fail(err) {
-        rejected(err);
-      } });
-
-
-    // }, 5000)
-  });
-
-}var _default =
-
-service;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-/* 10 */,
-/* 11 */,
-/* 12 */
+/* 8 */,
+/* 9 */,
+/* 10 */
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
   \**********************************************************************************************************/
@@ -8159,24 +8089,20 @@ function normalizeComponent (
 
 
 /***/ }),
-/* 13 */
-/*!******************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/index.js ***!
-  \******************************************************/
+/* 11 */
+/*!********************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/index.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-var _mixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mixin.js */ 14));
+var _mixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mixin.js */ 12));
 
 
 
-var _request = _interopRequireDefault(__webpack_require__(/*! ./libs/request */ 15));
-
-
-
-
+var _request = _interopRequireDefault(__webpack_require__(/*! ./libs/request */ 13));
 
 
 
@@ -8193,56 +8119,60 @@ var _request = _interopRequireDefault(__webpack_require__(/*! ./libs/request */ 
 
 
 
-var _queryParams = _interopRequireDefault(__webpack_require__(/*! ./libs/function/queryParams.js */ 19));
-
-var _route = _interopRequireDefault(__webpack_require__(/*! ./libs/function/route.js */ 20));
-
-var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFormat.js */ 24));
-
-var _timeFrom = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFrom.js */ 25));
-
-var _colorGradient = _interopRequireDefault(__webpack_require__(/*! ./libs/function/colorGradient.js */ 26));
-
-var _guid = _interopRequireDefault(__webpack_require__(/*! ./libs/function/guid.js */ 27));
-
-var _color = _interopRequireDefault(__webpack_require__(/*! ./libs/function/color.js */ 28));
-
-var _type2icon = _interopRequireDefault(__webpack_require__(/*! ./libs/function/type2icon.js */ 29));
-
-var _randomArray = _interopRequireDefault(__webpack_require__(/*! ./libs/function/randomArray.js */ 30));
-
-var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepClone.js */ 17));
-
-var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepMerge.js */ 16));
-
-var _addUnit = _interopRequireDefault(__webpack_require__(/*! ./libs/function/addUnit.js */ 31));
-
-
-var _test = _interopRequireDefault(__webpack_require__(/*! ./libs/function/test.js */ 18));
-
-var _random = _interopRequireDefault(__webpack_require__(/*! ./libs/function/random.js */ 32));
-
-var _trim = _interopRequireDefault(__webpack_require__(/*! ./libs/function/trim.js */ 33));
-
-var _toast = _interopRequireDefault(__webpack_require__(/*! ./libs/function/toast.js */ 34));
-
-var _getParent = _interopRequireDefault(__webpack_require__(/*! ./libs/function/getParent.js */ 35));
-
-var _$parent = _interopRequireDefault(__webpack_require__(/*! ./libs/function/$parent.js */ 36));
 
 
 
-var _sys = __webpack_require__(/*! ./libs/function/sys.js */ 37);
 
-var _debounce = _interopRequireDefault(__webpack_require__(/*! ./libs/function/debounce.js */ 38));
+var _queryParams = _interopRequireDefault(__webpack_require__(/*! ./libs/function/queryParams.js */ 17));
 
-var _throttle = _interopRequireDefault(__webpack_require__(/*! ./libs/function/throttle.js */ 39));
+var _route = _interopRequireDefault(__webpack_require__(/*! ./libs/function/route.js */ 18));
+
+var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFormat.js */ 22));
+
+var _timeFrom = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFrom.js */ 23));
+
+var _colorGradient = _interopRequireDefault(__webpack_require__(/*! ./libs/function/colorGradient.js */ 24));
+
+var _guid = _interopRequireDefault(__webpack_require__(/*! ./libs/function/guid.js */ 25));
+
+var _color = _interopRequireDefault(__webpack_require__(/*! ./libs/function/color.js */ 26));
+
+var _type2icon = _interopRequireDefault(__webpack_require__(/*! ./libs/function/type2icon.js */ 27));
+
+var _randomArray = _interopRequireDefault(__webpack_require__(/*! ./libs/function/randomArray.js */ 28));
+
+var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepClone.js */ 15));
+
+var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepMerge.js */ 14));
+
+var _addUnit = _interopRequireDefault(__webpack_require__(/*! ./libs/function/addUnit.js */ 29));
+
+
+var _test = _interopRequireDefault(__webpack_require__(/*! ./libs/function/test.js */ 16));
+
+var _random = _interopRequireDefault(__webpack_require__(/*! ./libs/function/random.js */ 30));
+
+var _trim = _interopRequireDefault(__webpack_require__(/*! ./libs/function/trim.js */ 31));
+
+var _toast = _interopRequireDefault(__webpack_require__(/*! ./libs/function/toast.js */ 32));
+
+var _getParent = _interopRequireDefault(__webpack_require__(/*! ./libs/function/getParent.js */ 33));
+
+var _$parent = _interopRequireDefault(__webpack_require__(/*! ./libs/function/$parent.js */ 34));
 
 
 
-var _config = _interopRequireDefault(__webpack_require__(/*! ./libs/config/config.js */ 40));
+var _sys = __webpack_require__(/*! ./libs/function/sys.js */ 35);
 
-var _zIndex = _interopRequireDefault(__webpack_require__(/*! ./libs/config/zIndex.js */ 41));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 引入全局mixin
+var _debounce = _interopRequireDefault(__webpack_require__(/*! ./libs/function/debounce.js */ 36));
+
+var _throttle = _interopRequireDefault(__webpack_require__(/*! ./libs/function/throttle.js */ 37));
+
+
+
+var _config = _interopRequireDefault(__webpack_require__(/*! ./libs/config/config.js */ 38));
+
+var _zIndex = _interopRequireDefault(__webpack_require__(/*! ./libs/config/zIndex.js */ 39));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 引入全局mixin
 // 引入关于是否mixin集成小程序分享的配置
 // import wxshare from './libs/mixin/mpShare.js'
 // 全局挂载引入http相关请求拦截插件
@@ -8310,10 +8240,10 @@ var install = function install(Vue) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 14 */
-/*!*****************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/mixin/mixin.js ***!
-  \*****************************************************************/
+/* 12 */
+/*!*******************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/mixin/mixin.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8383,16 +8313,16 @@ var install = function install(Vue) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 15 */
-/*!*******************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/request/index.js ***!
-  \*******************************************************************/
+/* 13 */
+/*!*********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/request/index.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ../function/deepMerge */ 16));
-var _test = _interopRequireDefault(__webpack_require__(/*! ../function/test */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ../function/deepMerge */ 14));
+var _test = _interopRequireDefault(__webpack_require__(/*! ../function/test */ 16));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
 Request = /*#__PURE__*/function () {_createClass(Request, [{ key: "setConfig",
     // 设置全局默认配置
     value: function setConfig(customConfig) {
@@ -8563,15 +8493,15 @@ new Request();exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 16 */
-/*!************************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/deepMerge.js ***!
-  \************************************************************************/
+/* 14 */
+/*!**************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/deepMerge.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./deepClone */ 17));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./deepClone */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 // JS对象深度合并
 function deepMerge() {var target = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var source = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -8603,10 +8533,10 @@ function deepMerge() {var target = arguments.length > 0 && arguments[0] !== unde
 deepMerge;exports.default = _default;
 
 /***/ }),
-/* 17 */
-/*!************************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/deepClone.js ***!
-  \************************************************************************/
+/* 15 */
+/*!**************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/deepClone.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8636,10 +8566,10 @@ function deepClone(obj) {
 deepClone;exports.default = _default;
 
 /***/ }),
-/* 18 */
-/*!*******************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/test.js ***!
-  \*******************************************************************/
+/* 16 */
+/*!*********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/test.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8877,10 +8807,10 @@ function code(value) {var len = arguments.length > 1 && arguments[1] !== undefin
   code: code };exports.default = _default;
 
 /***/ }),
-/* 19 */
-/*!**************************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/queryParams.js ***!
-  \**************************************************************************/
+/* 17 */
+/*!****************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/queryParams.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8945,18 +8875,18 @@ function queryParams() {var data = arguments.length > 0 && arguments[0] !== unde
 queryParams;exports.default = _default;
 
 /***/ }),
-/* 20 */
-/*!********************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/route.js ***!
-  \********************************************************************/
+/* 18 */
+/*!**********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/route.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              * 并且带有路由拦截功能
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */var
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * 并且带有路由拦截功能
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */var
 
 Router = /*#__PURE__*/function () {
   function Router() {_classCallCheck(this, Router);
@@ -9078,17 +9008,17 @@ new Router().route;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 21 */
+/* 19 */
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 22);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 20);
 
 /***/ }),
-/* 22 */
+/* 20 */
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -9119,7 +9049,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 23);
+module.exports = __webpack_require__(/*! ./runtime */ 21);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -9135,7 +9065,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 23 */
+/* 21 */
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -9866,10 +9796,10 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 24 */
-/*!*************************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/timeFormat.js ***!
-  \*************************************************************************/
+/* 22 */
+/*!***************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/timeFormat.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9927,15 +9857,15 @@ function timeFormat() {var dateTime = arguments.length > 0 && arguments[0] !== u
 timeFormat;exports.default = _default;
 
 /***/ }),
-/* 25 */
-/*!***********************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/timeFrom.js ***!
-  \***********************************************************************/
+/* 23 */
+/*!*************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/timeFrom.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ../../libs/function/timeFormat.js */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ../../libs/function/timeFormat.js */ 22));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 /**
                                                                                                                                                                                                                                                                                           * 时间戳转为多久之前
@@ -9984,10 +9914,10 @@ function timeFrom() {var dateTime = arguments.length > 0 && arguments[0] !== und
 timeFrom;exports.default = _default;
 
 /***/ }),
-/* 26 */
-/*!****************************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/colorGradient.js ***!
-  \****************************************************************************/
+/* 24 */
+/*!******************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/colorGradient.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10127,10 +10057,10 @@ function colorToRgba(color) {var alpha = arguments.length > 1 && arguments[1] !=
   colorToRgba: colorToRgba };exports.default = _default;
 
 /***/ }),
-/* 27 */
-/*!*******************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/guid.js ***!
-  \*******************************************************************/
+/* 25 */
+/*!*********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/guid.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10178,10 +10108,10 @@ function guid() {var len = arguments.length > 0 && arguments[0] !== undefined ? 
 guid;exports.default = _default;
 
 /***/ }),
-/* 28 */
-/*!********************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/color.js ***!
-  \********************************************************************/
+/* 26 */
+/*!**********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/color.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10225,10 +10155,10 @@ var color = {
 color;exports.default = _default;
 
 /***/ }),
-/* 29 */
-/*!************************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/type2icon.js ***!
-  \************************************************************************/
+/* 27 */
+/*!**************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/type2icon.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10270,10 +10200,10 @@ function type2icon() {var type = arguments.length > 0 && arguments[0] !== undefi
 type2icon;exports.default = _default;
 
 /***/ }),
-/* 30 */
-/*!**************************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/randomArray.js ***!
-  \**************************************************************************/
+/* 28 */
+/*!****************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/randomArray.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10287,15 +10217,15 @@ function randomArray() {var array = arguments.length > 0 && arguments[0] !== und
 randomArray;exports.default = _default;
 
 /***/ }),
-/* 31 */
-/*!**********************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/addUnit.js ***!
-  \**********************************************************************/
+/* 29 */
+/*!************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/addUnit.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = addUnit;var _test = _interopRequireDefault(__webpack_require__(/*! ./test.js */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = addUnit;var _test = _interopRequireDefault(__webpack_require__(/*! ./test.js */ 16));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 // 添加单位，如果有rpx，%，px等单位结尾或者值为auto，直接返回，否则加上rpx单位结尾
 function addUnit() {var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'auto';var unit = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'rpx';
@@ -10305,10 +10235,10 @@ function addUnit() {var value = arguments.length > 0 && arguments[0] !== undefin
 }
 
 /***/ }),
-/* 32 */
-/*!*********************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/random.js ***!
-  \*********************************************************************/
+/* 30 */
+/*!***********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/random.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10325,10 +10255,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 random;exports.default = _default;
 
 /***/ }),
-/* 33 */
-/*!*******************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/trim.js ***!
-  \*******************************************************************/
+/* 31 */
+/*!*********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/trim.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10350,10 +10280,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 trim;exports.default = _default;
 
 /***/ }),
-/* 34 */
-/*!********************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/toast.js ***!
-  \********************************************************************/
+/* 32 */
+/*!**********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/toast.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10370,10 +10300,10 @@ toast;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 35 */
-/*!************************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/getParent.js ***!
-  \************************************************************************/
+/* 33 */
+/*!**************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/getParent.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10427,10 +10357,10 @@ function getParent(name, keys) {
 }
 
 /***/ }),
-/* 36 */
-/*!**********************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/$parent.js ***!
-  \**********************************************************************/
+/* 34 */
+/*!************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/$parent.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10455,10 +10385,10 @@ function $parent() {var name = arguments.length > 0 && arguments[0] !== undefine
 }
 
 /***/ }),
-/* 37 */
-/*!******************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/sys.js ***!
-  \******************************************************************/
+/* 35 */
+/*!********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/sys.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10473,10 +10403,10 @@ function sys() {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 38 */
-/*!***********************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/debounce.js ***!
-  \***********************************************************************/
+/* 36 */
+/*!*************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/debounce.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10512,10 +10442,10 @@ function debounce(func) {var wait = arguments.length > 1 && arguments[1] !== und
 debounce;exports.default = _default;
 
 /***/ }),
-/* 39 */
-/*!***********************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/throttle.js ***!
-  \***********************************************************************/
+/* 37 */
+/*!*************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/throttle.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10554,10 +10484,10 @@ function throttle(func) {var wait = arguments.length > 1 && arguments[1] !== und
 throttle;exports.default = _default;
 
 /***/ }),
-/* 40 */
-/*!*******************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/config/config.js ***!
-  \*******************************************************************/
+/* 38 */
+/*!*********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/config/config.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10577,10 +10507,10 @@ var version = '1.8.4';var _default =
   'warning'] };exports.default = _default;
 
 /***/ }),
-/* 41 */
-/*!*******************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/config/zIndex.js ***!
-  \*******************************************************************/
+/* 39 */
+/*!*********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/config/zIndex.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10606,20 +10536,20 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   indexListSticky: 965 };exports.default = _default;
 
 /***/ }),
-/* 42 */
-/*!***************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/store/index.js ***!
-  \***************************************************/
+/* 40 */
+/*!*****************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/store/index.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 43));
-var _getters = _interopRequireDefault(__webpack_require__(/*! ./getters */ 44));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 41));
+var _getters = _interopRequireDefault(__webpack_require__(/*! ./getters */ 42));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 _vue.default.use(_vuex.default);
 
-var mod = __webpack_require__(45);
+var mod = __webpack_require__(43);
 var modules = mod.keys().reduce(function (modules, modulePath) {
   var moduleName = modulePath.replace(/^\.\/(.*)\.\w+$/, '$1'); // set './app.js' => 'app'
   var value = mod(modulePath);
@@ -10632,7 +10562,7 @@ new _vuex.default.Store({
   getters: _getters.default });exports.default = _default;
 
 /***/ }),
-/* 43 */
+/* 41 */
 /*!********************************************!*\
   !*** ./node_modules/vuex/dist/vuex.esm.js ***!
   \********************************************/
@@ -11744,29 +11674,31 @@ var index = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 44 */
-/*!*****************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/store/getters.js ***!
-  \*****************************************************/
+/* 42 */
+/*!*******************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/store/getters.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var getters = {
-  getUserAction: function getUserAction(state) {return state.user.action;} };var _default =
+  getUserAction: function getUserAction(state) {return state.user.action;},
+  getUserInfo: function getUserInfo(state) {return state.user.userInfo;},
+  getUserPlayList: function getUserPlayList(state) {return state.user.userPlayList;} };var _default =
 
 getters;exports.default = _default;
 
 /***/ }),
-/* 45 */
-/*!*************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/store/modules sync \.js$ ***!
-  \*************************************************************/
+/* 43 */
+/*!***************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/store/modules sync \.js$ ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./user.js": 46
+	"./user.js": 44
 };
 
 
@@ -11787,13 +11719,13 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 45;
+webpackContext.id = 43;
 
 /***/ }),
-/* 46 */
-/*!**********************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/store/modules/user.js ***!
-  \**********************************************************/
+/* 44 */
+/*!************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/store/modules/user.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11802,9 +11734,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   namespaced: true,
   state: {
     action: false,
-    userInfo: {} },
+    userInfo: {},
 
 
+    userPlayList: [] },
 
   mutations: {
     setUserAction: function setUserAction(state, val) {
@@ -11812,6 +11745,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     },
     setUserInfo: function setUserInfo(state, val) {
       state.userInfo = JSON.parse(JSON.stringify(val));
+    },
+    setuserPlayList: function setuserPlayList(state, val) {
+      state.userPlayList = JSON.parse(JSON.stringify(val));
     } },
 
   actions: {
@@ -11820,24 +11756,57 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     },
     setUserInfo: function setUserInfo(_ref2, val) {var commit = _ref2.commit;
       commit('setUserInfo', val);
+    },
+    setuserPlayList: function setuserPlayList(_ref3, val) {var commit = _ref3.commit;
+      commit('setuserPlayList', val);
     } } };exports.default = _default;
 
 /***/ }),
+/* 45 */
+/*!*******************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/utils/filters.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+_vue.default.filter('PlayNum', function (value) {
+  //播放量过滤
+
+  var param = {};
+  var k = 10000,
+  sizes = ['', '万', '亿', '万亿'],
+  i;
+  if (value < k) {
+    param.value = value;
+    param.unit = '';
+  } else {
+    i = Math.floor(Math.log(value) / Math.log(k));
+    param.value = (value / Math.pow(k, i)).toFixed(0);
+    param.unit = sizes[i];
+  }
+  return param.value + param.unit;
+
+});
+
+/***/ }),
+/* 46 */,
 /* 47 */,
 /* 48 */,
 /* 49 */,
 /* 50 */,
 /* 51 */,
-/* 52 */,
-/* 53 */
-/*!*************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/api/index.js ***!
-  \*************************************************/
+/* 52 */
+/*!***************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/api/index.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.banner = banner;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 9));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.banner = banner;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 53));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 function banner() {
   return (0, _request.default)({
     url: '/banner',
@@ -11846,14 +11815,109 @@ function banner() {
 }
 
 /***/ }),
+/* 53 */
+/*!*******************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/utils/request.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function service(options) {
+  var server_url = 'https://netease-cloud-music-api-chi-henna.vercel.app'; //请求地址
+
+  var Cookie = uni.getStorageSync('Cookie');
+
+  return new Promise(function (resolved, rejected) {
+    // setTimeout(() => {
+    uni.request({
+
+
+
+
+
+      url: server_url + options.url,
+
+      // Cookie
+      method: options.method,
+      // timeout:5000,
+      header: {
+        'content-type': 'application/x-www-form-urlencoded', //自定义请求头信息
+
+        'Cookie': Cookie },
+
+
+      data: options.data,
+      success: function success(res) {
+        resolved(res.data);
+      },
+      fail: function fail(err) {
+        rejected(err);
+      } });
+
+
+    // }, 5000)
+  });
+
+}var _default =
+
+service;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
 /* 54 */,
 /* 55 */,
 /* 56 */,
 /* 57 */,
 /* 58 */,
 /* 59 */,
-/* 60 */,
-/* 61 */,
+/* 60 */
+/*!***************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/api/login.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.phoneLogin = phoneLogin;exports.loginStatus = loginStatus;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 53));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+function phoneLogin(data) {
+  //手机登陆
+  return (0, _request.default)({
+    url: '/login/cellphone',
+    method: 'POST',
+    data: data });
+
+}
+
+function loginStatus(data) {
+  //登陆状态
+  return (0, _request.default)({
+    url: '/login/status',
+    method: 'GET',
+    data: data });
+
+}
+
+/***/ }),
+/* 61 */
+/*!**************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/api/user.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.playlist = playlist;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 53));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+function playlist(data) {
+  //获取用户歌单
+  return (0, _request.default)({
+    url: '/user/playlist',
+    method: 'GET',
+    data: data });
+
+}
+
+/***/ }),
 /* 62 */,
 /* 63 */,
 /* 64 */,
@@ -11870,7 +11934,25 @@ function banner() {
 /* 75 */,
 /* 76 */,
 /* 77 */,
-/* 78 */,
+/* 78 */
+/*!**************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/api/play.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.playlist = playlist;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 53));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+function playlist(data) {
+  //获取歌单详情
+  return (0, _request.default)({
+    url: '/playlist/detail',
+    method: 'GET',
+    data: data });
+
+}
+
+/***/ }),
 /* 79 */,
 /* 80 */,
 /* 81 */,
@@ -11909,10 +11991,28 @@ function banner() {
 /* 114 */,
 /* 115 */,
 /* 116 */,
-/* 117 */
-/*!******************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/util/emitter.js ***!
-  \******************************************************************/
+/* 117 */,
+/* 118 */,
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */
+/*!********************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/util/emitter.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11968,10 +12068,10 @@ function _broadcast(componentName, eventName, params) {
     } } };exports.default = _default;
 
 /***/ }),
-/* 118 */
-/*!**************************************************************************!*\
-  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/util/async-validator.js ***!
-  \**************************************************************************/
+/* 136 */
+/*!****************************************************************************!*\
+  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/util/async-validator.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13331,10 +13431,10 @@ Schema.warning = warning;
 Schema.messages = messages;var _default =
 
 Schema;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../HBuilderX.3.1.8.20210406.full/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 119)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/node-libs-browser/mock/process.js */ 137)))
 
 /***/ }),
-/* 119 */
+/* 137 */
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -13365,7 +13465,7 @@ exports.binding = function (name) {
     var path;
     exports.cwd = function () { return cwd };
     exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 120);
+        if (!path) path = __webpack_require__(/*! path */ 138);
         cwd = path.resolve(dir, cwd);
     };
 })();
@@ -13378,7 +13478,7 @@ exports.features = {};
 
 
 /***/ }),
-/* 120 */
+/* 138 */
 /*!***********************************************!*\
   !*** ./node_modules/path-browserify/index.js ***!
   \***********************************************/
@@ -13688,7 +13788,7 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 119)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 137)))
 
 /***/ })
 ]]);

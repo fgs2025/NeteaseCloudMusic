@@ -11,13 +11,14 @@
 
 <script>
 import { phoneLogin } from '../../api/login.js';
+import { playlist } from 'api/user.js';
 export default {
 	data() {
 		return {
 			form: {
 				phone: '',
 				password: '',
-				timestamp:+new Date
+				timestamp: +new Date()
 			},
 			rules: {
 				phone: [
@@ -56,10 +57,18 @@ export default {
 						this.loading = true;
 						phoneLogin(this.form).then(res => {
 							this.loading = false;
-							console.log(res)
+							// console.log(res);
 							if (res.code == 200) {
 								this.$store.dispatch('user/setUserAction', true);
 								this.$store.dispatch('user/setUserInfo', res.profile);
+								let uid = this.$store.getters.getUserInfo.userId;
+								// console.log(res)
+								// #ifdef MP
+								uni.setStorageSync('Cookie', res.cookie);
+								// #endif
+								playlist({ uid }).then(res => {
+									this.$store.dispatch('user/setuserPlayList', res.playlist);
+								});
 								this.$refs.uToast.show({
 									title: '登录成功',
 									type: 'success',

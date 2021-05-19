@@ -13,7 +13,8 @@
 		}, {
 			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "我的"
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh":true
 			}
 
 		}, {
@@ -24,7 +25,16 @@
 			}
 
 		}
-	],
+	    ,{
+            "path" : "pages/playlist/playlist",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "歌单",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarBackgroundColor": "#87ceeb",

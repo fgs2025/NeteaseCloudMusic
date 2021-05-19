@@ -43,7 +43,9 @@
             /* ios打包配置 */
             "ios" : {},
             /* SDK配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "ad" : {}
+            }
         }
     },
     /* 快应用特有相关 */
@@ -52,7 +54,8 @@
     "mp-weixin" : {
         "appid" : "wx274cb446640ae561",
         "setting" : {
-            "urlCheck" : false
+            "urlCheck" : false,
+            "minified" : false
         },
         "usingComponents" : true
     },
@@ -82,6 +85,14 @@
                     }
                 }
             }
+        },
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        },
+        "router" : {
+            "mode" : "history"
         }
     }
 }

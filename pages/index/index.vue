@@ -1,7 +1,8 @@
 <template>
-	<view class="">
+	<view class="index-page">
 		<navbar></navbar>
 		<scroll-view 
+		
 		class="s-view" 
 		scroll-y="true" 
 		refresher-enabled="true" 
@@ -45,4 +46,12 @@ export default {
 };
 </script>
 
-<style lang="less"></style>
+<style lang="less">
+	.index-page{
+			// height: 100%;
+		.s-view{
+			// height: 100%;
+		}
+	}
+	
+</style>

@@ -1,7 +1,4 @@
-.home-page {
-  height: 100%;
-}
-.home-page .user-content .userInfo {
+.home-page .user-content .user-info {
   height: 100rpx;
   display: -webkit-box;
   display: -webkit-flex;
@@ -12,20 +9,49 @@
   padding: 0 40rpx;
   box-sizing: border-box;
   margin-top: 10rpx;
+  margin-bottom: 20rpx;
 }
-.home-page .user-content .userInfo text {
+.home-page .user-content .user-info text {
   margin-left: 40rpx;
 }
-.home-page .loginFrom {
+.home-page .user-content .user-play-list .item-box {
   height: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius: 24rpx;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  margin-top: 10rpx;
+}
+.home-page .user-content .user-play-list .item-box .item-top {
+  font-size: 24rpx;
+}
+.home-page .user-content .user-play-list .item-box .item {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
+  margin-top: 10rpx;
+}
+.home-page .user-content .user-play-list .item-box .item .img-box {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+}
+.home-page .user-content .user-play-list .item-box .item .txt-box {
+  margin-left: 10rpx;
+}
+.home-page .user-content .user-play-list .item-box .item .txt-box .title {
+  font-size: 24rpx;
+}
+.home-page .user-content .user-play-list .item-box .item .txt-box .num {
+  font-size: 24rpx;
+}
+.home-page .loginFrom {
+  margin-top: 200rpx;
 }
 

@@ -1,0 +1,113 @@
+.playlist-page .play-details {
+  padding: 40rpx 20rpx;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #87ceeb;
+}
+.playlist-page .play-details .img-box {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+  position: relative;
+}
+.playlist-page .play-details .img-box .playCount {
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  font-size: 24rpx;
+  padding: 3rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.playlist-page .play-details .txt-box {
+  width: calc(100% - 200rpx);
+  padding: 10rpx 0 0 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.playlist-page .play-details .txt-box .top .user {
+  margin-top: 10rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.playlist-page .play-details .txt-box .top .user .name {
+  margin-left: 10rpx;
+}
+.playlist-page .play-details .txt-box .bootm {
+  width: 100%;
+  font-size: 24rpx;
+  overflow: hidden;
+  /*超出部分隐藏*/
+  white-space: nowrap;
+  /*不换行*/
+  text-overflow: ellipsis;
+  /*超出部分文字以...显示*/
+}
+.playlist-page .songlist {
+  padding: 0 20rpx;
+}
+.playlist-page .songlist .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 20rpx;
+}
+.playlist-page .songlist .item .num {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+.playlist-page .songlist .item .songname {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+}
+.playlist-page .songlist .item .songname .name {
+  overflow: hidden;
+  /*超出部分隐藏*/
+  white-space: nowrap;
+  /*不换行*/
+  text-overflow: ellipsis;
+  /*超出部分文字以...显示*/
+}
+.playlist-page .songlist .item .songname .sing {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+  /*超出部分隐藏*/
+  white-space: nowrap;
+  /*不换行*/
+  text-overflow: ellipsis;
+  /*超出部分文字以...显示*/
+}
+.playlist-page .songlist .item .more {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+
