@@ -16,7 +16,8 @@ export default {
 		return {
 			form: {
 				phone: '',
-				password: ''
+				password: '',
+				timestamp:+new Date
 			},
 			rules: {
 				phone: [
@@ -58,6 +59,7 @@ export default {
 							console.log(res)
 							if (res.code == 200) {
 								this.$store.dispatch('user/setUserAction', true);
+								this.$store.dispatch('user/setUserInfo', res.profile);
 								this.$refs.uToast.show({
 									title: '登录成功',
 									type: 'success',

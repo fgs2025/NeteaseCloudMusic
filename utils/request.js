@@ -10,7 +10,7 @@ function service(options) {
 			url: server_url + options.url,
 			// #endif
 			method: options.method,
-			timeout:5000,
+			// timeout:5000,
 			header: {
 				'content-type': 'application/x-www-form-urlencoded' //自定义请求头信息
 			},
