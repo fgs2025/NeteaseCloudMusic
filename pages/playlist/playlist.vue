@@ -19,7 +19,10 @@
 				</view>
 			</view>
 			<view class="songlist">
-				<view class="item" v-for="(item, index) in playList.tracks" :key="index">
+				<view class="item" 
+				v-for="(item, index) in playList.tracks" 
+				:key="index"
+				@click="palysong(item)">
 					<view class="num">{{ index + 1 }}</view>
 					<view class="songname">
 						<view class="name">
@@ -62,6 +65,11 @@ export default {
 				uni.stopPullDownRefresh();
 			}, 100);
 		});
+	},
+	methods:{
+		palysong(item){
+			console.log(item)
+		}
 	}
 };
 </script>

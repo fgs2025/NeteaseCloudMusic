@@ -20,11 +20,14 @@
 				</view>
 			</view>
 		</view>
+		
 		<view class="loginFrom" v-else><u-button type="primary" plain ripple @click="loginFrom">立即登陆</u-button></view>
+		
 	</view>
 </template>
 
 <script>
+
 import { loginStatus } from 'api/login.js';
 import { playlist } from 'api/user.js';
 export default {
@@ -89,7 +92,8 @@ export default {
 				url: `../playlist/playlist?id=${id}`
 			});
 		}
-	}
+	},
+
 };
 </script>
 
