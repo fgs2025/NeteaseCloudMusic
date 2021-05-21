@@ -4,7 +4,7 @@ function service(options) {
 	let Cookie = uni.getStorageSync('Cookie');
 	// #endif
 	return new Promise((resolved, rejected) => {
-		// setTimeout(() => {
+
 		uni.request({
 			// #ifdef H5
 			url: '/api' + options.url,
@@ -13,7 +13,7 @@ function service(options) {
 			// #ifndef H5
 			url: server_url + options.url,
 			// #endif
-			// Cookie
+	
 			method: options.method,
 			// timeout:5000,
 			header: {
@@ -31,7 +31,7 @@ function service(options) {
 			},
 
 		});
-		// }, 5000)
+
 	})
 
 }

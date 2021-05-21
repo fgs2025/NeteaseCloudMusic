@@ -41,6 +41,7 @@ export default {
     refresherrefresh() {
       if (this.triggered) return;
       this.init();
+
     },
   },
   components: {
@@ -50,10 +51,10 @@ export default {
 </script>
 
 <style lang="less">
-.index-page {
-  // height: 100%;
-  .s-view {
-    // height: 100%;
-  }
-}
+// .index-page {
+//   // height: 100%;
+//   .s-view {
+//     // height: 100%;
+//   }
+// }
 </style>

@@ -822,7 +822,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -7395,7 +7395,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -7416,14 +7416,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -7509,7 +7509,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -7947,9 +7947,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!*************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/pages.json ***!
-  \*************************************************/
+/*!***********************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/pages.json ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8090,9 +8090,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 11 */
-/*!********************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/index.js ***!
-  \********************************************************/
+/*!******************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/index.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8241,9 +8241,9 @@ var install = function install(Vue) {
 
 /***/ }),
 /* 12 */
-/*!*******************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/mixin/mixin.js ***!
-  \*******************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/mixin/mixin.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8314,9 +8314,9 @@ var install = function install(Vue) {
 
 /***/ }),
 /* 13 */
-/*!*********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/request/index.js ***!
-  \*********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/request/index.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8494,9 +8494,9 @@ new Request();exports.default = _default;
 
 /***/ }),
 /* 14 */
-/*!**************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/deepMerge.js ***!
-  \**************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/deepMerge.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8534,9 +8534,9 @@ deepMerge;exports.default = _default;
 
 /***/ }),
 /* 15 */
-/*!**************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/deepClone.js ***!
-  \**************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/deepClone.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8567,9 +8567,9 @@ deepClone;exports.default = _default;
 
 /***/ }),
 /* 16 */
-/*!*********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/test.js ***!
-  \*********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/test.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8808,9 +8808,9 @@ function code(value) {var len = arguments.length > 1 && arguments[1] !== undefin
 
 /***/ }),
 /* 17 */
-/*!****************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/queryParams.js ***!
-  \****************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/queryParams.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8876,17 +8876,17 @@ queryParams;exports.default = _default;
 
 /***/ }),
 /* 18 */
-/*!**********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/route.js ***!
-  \**********************************************************************/
+/*!********************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/route.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * 并且带有路由拦截功能
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */var
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              * 并且带有路由拦截功能
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */var
 
 Router = /*#__PURE__*/function () {
   function Router() {_classCallCheck(this, Router);
@@ -9797,9 +9797,9 @@ if (hadRuntime) {
 
 /***/ }),
 /* 22 */
-/*!***************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/timeFormat.js ***!
-  \***************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/timeFormat.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9858,9 +9858,9 @@ timeFormat;exports.default = _default;
 
 /***/ }),
 /* 23 */
-/*!*************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/timeFrom.js ***!
-  \*************************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/timeFrom.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9915,9 +9915,9 @@ timeFrom;exports.default = _default;
 
 /***/ }),
 /* 24 */
-/*!******************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/colorGradient.js ***!
-  \******************************************************************************/
+/*!****************************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/colorGradient.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10058,9 +10058,9 @@ function colorToRgba(color) {var alpha = arguments.length > 1 && arguments[1] !=
 
 /***/ }),
 /* 25 */
-/*!*********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/guid.js ***!
-  \*********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/guid.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10109,9 +10109,9 @@ guid;exports.default = _default;
 
 /***/ }),
 /* 26 */
-/*!**********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/color.js ***!
-  \**********************************************************************/
+/*!********************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/color.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10156,9 +10156,9 @@ color;exports.default = _default;
 
 /***/ }),
 /* 27 */
-/*!**************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/type2icon.js ***!
-  \**************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/type2icon.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10201,9 +10201,9 @@ type2icon;exports.default = _default;
 
 /***/ }),
 /* 28 */
-/*!****************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/randomArray.js ***!
-  \****************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/randomArray.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10218,9 +10218,9 @@ randomArray;exports.default = _default;
 
 /***/ }),
 /* 29 */
-/*!************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/addUnit.js ***!
-  \************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/addUnit.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10236,9 +10236,9 @@ function addUnit() {var value = arguments.length > 0 && arguments[0] !== undefin
 
 /***/ }),
 /* 30 */
-/*!***********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/random.js ***!
-  \***********************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/random.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10256,9 +10256,9 @@ random;exports.default = _default;
 
 /***/ }),
 /* 31 */
-/*!*********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/trim.js ***!
-  \*********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/trim.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10281,9 +10281,9 @@ trim;exports.default = _default;
 
 /***/ }),
 /* 32 */
-/*!**********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/toast.js ***!
-  \**********************************************************************/
+/*!********************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/toast.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10301,9 +10301,9 @@ toast;exports.default = _default;
 
 /***/ }),
 /* 33 */
-/*!**************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/getParent.js ***!
-  \**************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/getParent.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10358,9 +10358,9 @@ function getParent(name, keys) {
 
 /***/ }),
 /* 34 */
-/*!************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/$parent.js ***!
-  \************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/$parent.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10386,9 +10386,9 @@ function $parent() {var name = arguments.length > 0 && arguments[0] !== undefine
 
 /***/ }),
 /* 35 */
-/*!********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/sys.js ***!
-  \********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/sys.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10404,9 +10404,9 @@ function sys() {
 
 /***/ }),
 /* 36 */
-/*!*************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/debounce.js ***!
-  \*************************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/debounce.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10443,9 +10443,9 @@ debounce;exports.default = _default;
 
 /***/ }),
 /* 37 */
-/*!*************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/function/throttle.js ***!
-  \*************************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/function/throttle.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10485,9 +10485,9 @@ throttle;exports.default = _default;
 
 /***/ }),
 /* 38 */
-/*!*********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/config/config.js ***!
-  \*********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/config/config.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10508,9 +10508,9 @@ var version = '1.8.4';var _default =
 
 /***/ }),
 /* 39 */
-/*!*********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/config/zIndex.js ***!
-  \*********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/config/zIndex.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10537,9 +10537,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 40 */
-/*!*****************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/store/index.js ***!
-  \*****************************************************/
+/*!***************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/store/index.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11675,9 +11675,9 @@ var index = {
 
 /***/ }),
 /* 42 */
-/*!*******************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/store/getters.js ***!
-  \*******************************************************/
+/*!*****************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/store/getters.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11691,9 +11691,9 @@ getters;exports.default = _default;
 
 /***/ }),
 /* 43 */
-/*!***************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/store/modules sync \.js$ ***!
-  \***************************************************************/
+/*!*************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/store/modules sync \.js$ ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11723,9 +11723,9 @@ webpackContext.id = 43;
 
 /***/ }),
 /* 44 */
-/*!************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/store/modules/user.js ***!
-  \************************************************************/
+/*!**********************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/store/modules/user.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11763,9 +11763,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 45 */
-/*!*******************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/utils/filters.js ***!
-  \*******************************************************/
+/*!*****************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/utils/filters.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11799,9 +11799,9 @@ _vue.default.filter('PlayNum', function (value) {
 /* 50 */,
 /* 51 */,
 /* 52 */
-/*!***************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/api/index.js ***!
-  \***************************************************/
+/*!*************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/api/index.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11816,9 +11816,9 @@ function banner() {
 
 /***/ }),
 /* 53 */
-/*!*******************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/utils/request.js ***!
-  \*******************************************************/
+/*!*****************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/utils/request.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11829,7 +11829,7 @@ function banner() {
   var Cookie = uni.getStorageSync('Cookie');
 
   return new Promise(function (resolved, rejected) {
-    // setTimeout(() => {
+
     uni.request({
 
 
@@ -11838,7 +11838,7 @@ function banner() {
 
       url: server_url + options.url,
 
-      // Cookie
+
       method: options.method,
       // timeout:5000,
       header: {
@@ -11856,7 +11856,7 @@ function banner() {
       } });
 
 
-    // }, 5000)
+
   });
 
 }var _default =
@@ -11871,10 +11871,12 @@ service;exports.default = _default;
 /* 57 */,
 /* 58 */,
 /* 59 */,
-/* 60 */
-/*!***************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/api/login.js ***!
-  \***************************************************/
+/* 60 */,
+/* 61 */,
+/* 62 */
+/*!*************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/api/login.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11899,10 +11901,10 @@ function loginStatus(data) {
 }
 
 /***/ }),
-/* 61 */
-/*!**************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/api/user.js ***!
-  \**************************************************/
+/* 63 */
+/*!************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/api/user.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11918,8 +11920,6 @@ function playlist(data) {
 }
 
 /***/ }),
-/* 62 */,
-/* 63 */,
 /* 64 */,
 /* 65 */,
 /* 66 */,
@@ -11934,10 +11934,12 @@ function playlist(data) {
 /* 75 */,
 /* 76 */,
 /* 77 */,
-/* 78 */
-/*!**************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/api/play.js ***!
-  \**************************************************/
+/* 78 */,
+/* 79 */,
+/* 80 */
+/*!************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/api/play.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11953,8 +11955,6 @@ function playlist(data) {
 }
 
 /***/ }),
-/* 79 */,
-/* 80 */,
 /* 81 */,
 /* 82 */,
 /* 83 */,
@@ -12009,10 +12009,12 @@ function playlist(data) {
 /* 132 */,
 /* 133 */,
 /* 134 */,
-/* 135 */
-/*!********************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/util/emitter.js ***!
-  \********************************************************************/
+/* 135 */,
+/* 136 */,
+/* 137 */
+/*!******************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/util/emitter.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12068,10 +12070,10 @@ function _broadcast(componentName, eventName, params) {
     } } };exports.default = _default;
 
 /***/ }),
-/* 136 */
-/*!****************************************************************************!*\
-  !*** E:/1-漫游培训/作业/NeteaseCloudMusic/uview-ui/libs/util/async-validator.js ***!
-  \****************************************************************************/
+/* 138 */
+/*!**************************************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/uview-ui/libs/util/async-validator.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12098,7 +12100,7 @@ function _broadcast(componentName, eventName, params) {
 var formatRegExp = /%[sdj%]/g;
 var warning = function warning() {}; // don't print warning message when in production env or node runtime
 
-if (typeof process !== 'undefined' && Object({"VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}) && "development" !== 'production' && typeof window !==
+if (typeof process !== 'undefined' && Object({"NODE_ENV":"development","VUE_APP_NAME":"NeteaseCloudMusic","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}) && "development" !== 'production' && typeof window !==
 'undefined' && typeof document !== 'undefined') {
   warning = function warning(type, errors) {
     if (typeof console !== 'undefined' && console.warn) {
@@ -13431,10 +13433,10 @@ Schema.warning = warning;
 Schema.messages = messages;var _default =
 
 Schema;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/node-libs-browser/mock/process.js */ 137)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../HBuilderX.3.1.8.20210406.full/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 139)))
 
 /***/ }),
-/* 137 */
+/* 139 */
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -13465,7 +13467,7 @@ exports.binding = function (name) {
     var path;
     exports.cwd = function () { return cwd };
     exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 138);
+        if (!path) path = __webpack_require__(/*! path */ 140);
         cwd = path.resolve(dir, cwd);
     };
 })();
@@ -13478,7 +13480,7 @@ exports.features = {};
 
 
 /***/ }),
-/* 138 */
+/* 140 */
 /*!***********************************************!*\
   !*** ./node_modules/path-browserify/index.js ***!
   \***********************************************/
@@ -13788,7 +13790,66 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 137)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 139)))
+
+/***/ }),
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */
+/*!************************************************!*\
+  !*** D:/漫游培训/项目/NeteaseCloudMusic/api/song.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.checkMusic = checkMusic;exports.songUrl = songUrl;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 53));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+function checkMusic(data) {
+  //获取歌单详情
+  return (0, _request.default)({
+    url: '/check/music',
+    method: 'GET',
+    data: data });
+
+}
+
+function songUrl(data) {
+  //获取歌单详情
+  return (0, _request.default)({
+    url: '/song/url',
+    method: 'GET',
+    data: data });
+
+}
 
 /***/ })
 ]]);
